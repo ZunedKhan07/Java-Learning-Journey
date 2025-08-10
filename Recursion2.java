@@ -1,38 +1,38 @@
-//  subsets
-import java.util.*;
+// //  subsets
+// import java.util.*;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 
-public class Recursion2 {
+// public class Recursion2 {
 
-    public static void printSubset(ArrayList <Integer> subset){
-        for(int i=0; i<subset.size(); i++){
-            System.out.println(subset.get(i)+" ");
-        }
-        System.out.println();
-    }
+//     public static void printSubset(ArrayList <Integer> subset){
+//         for(int i=0; i<subset.size(); i++){
+//             System.out.println(subset.get(i)+" ");
+//         }
+//         System.out.println();
+//     }
 
-    public static void findSubset(int n, ArrayList<Integer> subset){
-        if (n == 0) {
-            printSubset(subset);
-            return;
-        }
+//     public static void findSubset(int n, ArrayList<Integer> subset){
+//         if (n == 0) {
+//             printSubset(subset);
+//             return;
+//         }
 
-        // add hoga
-        subset.add(n);
-        findSubset(n-1, subset);
+//         // add hoga
+//         subset.add(n);
+//         findSubset(n-1, subset);
 
-        // add nahi hoga
-        subset.remove(subset.size()-1);
-        findSubset(n-1, subset);
-    }
+//         // add nahi hoga
+//         subset.remove(subset.size()-1);
+//         findSubset(n-1, subset);
+//     }
 
-    public static void main(String[] args) {
-        int n=3;
-        ArrayList<Integer> subset = new ArrayList<>();
-        findSubset(n, subset);
-    }
-}
+//     public static void main(String[] args) {
+//         int n=3;
+//         ArrayList<Integer> subset = new ArrayList<>();
+//         findSubset(n, subset);
+//     }
+// }
 
 
 // // placed tiles in a frush m*n.
