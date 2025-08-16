@@ -1,4 +1,128 @@
+// import java.util.Scanner;
+
 // public class Recursion1 {
+
+
+//                   // 1-2+3-4+5-6+7-8+..... T.C. = O(n)
+
+// public static int soln(int n){
+//     if(n == 0) return 0;
+
+//     if (n % 2 == 0) return soln(n-1) - n;
+
+//     return soln(n-1) + n;
+// }
+
+// public static void main(String[] args) {
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+
+//     System.out.println(soln(n));
+// }
+
+
+
+
+
+
+// public static int mul(int n, int k){
+
+//     if(k == 0) return 0;
+    
+//     int ans = n + mul(n, k-1);
+//     System.out.println(ans);
+//     return ans;
+// }
+
+// public static void main(String[] args) {
+//     mul(3, 5);
+// }
+
+
+//  other Opr.
+
+
+// public static int mul(int n, int k){
+
+//     if(k == 0) return 0;
+//     mul(n, k-1);
+//     int mult = n*k;
+//     System.out.println(mult);
+
+//     return mult;
+// }
+
+// public static void main(String[] args) {
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//     int k = sc.nextInt();
+//     mul(n, k);
+// }
+
+
+
+// time and space comp.: O(Q)
+
+// public static int powerVal(int p, int q) {
+
+//     if (q == 0) return 1;
+
+//     return powerVal(p, q-1)*p;
+// }
+
+// public static void main(String[] args) {
+//     System.out.println(powerVal(0, 0));
+// }
+
+// // p ki power q with better T.C. and S.C.
+// // T.C. = log(q)
+// static int powerVal(int p, int q){
+//     if(q == 0) return 1;
+
+//     int smallPower = powerVal(p, q/2);
+
+//     if (q % 2 == 0) return smallPower * smallPower;
+
+//     return smallPower * smallPower * p;
+// }
+
+// public static void main(String[] args) {
+//     System.out.println(powerVal(2, 3));
+// }
+
+
+//              // count of dijits
+
+// public static int countNum(int n){
+//     if (n == 0) return 0;
+
+//     return 1 + countNum(n/10);
+// }
+
+// public static void main(String[] args) {
+//     System.out.println(countNum(673));
+    
+// }
+
+
+
+
+    
+//                      // sum of dijits
+
+// public static int printDjtSum(int n){
+
+//     if (n >= 0 && n <= 9) return n;
+
+//     return n%10 + printDjtSum(n/10);
+// }
+
+// public static void main(String[] args) {
+//     System.out.println(printDjtSum(1));
+// }
+
+
+
 
 //     public static int calPower(int x, int n){
 //         if (n == 0) {
@@ -100,4 +224,4 @@
 // //         int n=5;
 // //         printNum(n);
 // //     }
-// // }
+// }
