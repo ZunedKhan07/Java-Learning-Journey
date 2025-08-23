@@ -1,3 +1,33 @@
+// find GCD  (grater common diviser)
+// Constaints : 0 <= x, y <= 1e6
+// Input : x = 4, y = 9
+// Output1 : 1
+
+public class Recursion1 {
+// // bruit forse approach
+
+//     public static int GCD(int x, int y){
+
+//         if (x < y) {
+//             for(int i=x; i>=1; i--){
+//                 if(x % i == 0 && y % i == 0){
+//                     System.out.println(i);
+//                     return i;
+//                 }
+//             }
+//         }
+//         return 1;
+//     }
+//     public static void main(String[] args) {
+//         int x = 5;
+//         int y = 9;
+//         GCD(x, y);
+//     }
+}
+
+
+
+
 // import java.util.Scanner;
 
 // public class Recursion1 {
