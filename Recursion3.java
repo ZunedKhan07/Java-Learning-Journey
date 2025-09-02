@@ -1,8 +1,3 @@
-
-
-
-
-// // GCD
 // public class Recursion3 {
 
 //     // 🟢 Euclid's Algorithem
@@ -17,14 +12,7 @@
 //     // lcm * gcd = x * y;
 //     public static void main(String[] args) {
 //         System.out.println(GCD(24, 15));
-//     }
-
-
-
-//     // public static int iGCD(int x, int y){
-//     //     while (x % y != 0) {
-//     //         int rem = x % y;
-//     //         x = y;
+//     }    //         x = y;
 //     //         y = rem;
 //     //     }
 //     //     return y;
