@@ -38,7 +38,7 @@
 
 
 
-        //    Ques.2 : Palimdrome 🟢
+        //    Ques.2 : Palimdrome 🟢 TC = O(n^2)
 
 // public class Recursion9 {
 
@@ -64,7 +64,7 @@
 //     }
 // }
 
-            //   Method : 2
+            //   Method : 2 TC = O(n)
 
 public class Recursion9 {
 
