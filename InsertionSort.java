@@ -1,5 +1,5 @@
 //  TC for werst cases = O(n^2) or best case O(n) and cont. space
-// Selection Sort is a stable alg.
+// Insertion Sort is a stable alg.
 // inplace alg. yes
 
 
