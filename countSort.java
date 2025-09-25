@@ -39,7 +39,7 @@
 // isse stability nhi rehti and obj. nhi kr sakte isliye isko extend krni padti hai
 
 
-//                    🟢 Method - 2 🟢 
+//                    🟢 Method - 2 🟢     // TC = n + max --> if(n >>>>> max) then TC = O(n)  & SC = n+k
 
 
 public class countSort {
@@ -66,22 +66,22 @@ public class countSort {
         int[] output = new int[n];
         int max = findMax(arr);
         int[] count = new int[max+1];
-        for(int i=0; i < n; i++){ // Make frequency array
+        for(int i=0; i < n; i++){ // Make frequency array   // TC --> n
             count[arr[i]]++;
         }
         // Make prefix sum array of count array
-        for(int i=1; i < count.length; i++){
+        for(int i=1; i < count.length; i++){  // TC --> max
             count[i] += count[i-1];
         }
 
         // Find the index of each elem in the original arr and put it in output arr
-        for(int i = n-1; i >= 0; i--){
+        for(int i = n-1; i >= 0; i--){  // TC --> n
             int idx = count[arr[i]] - 1;
             output[idx] = arr[i];
             count[arr[i]]--;
         }
         // copy all elem of output to arr
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n; i++){ // TC --> n
             arr[i] = output[i];
         }
     }
